@@ -22,12 +22,12 @@ const options = {
 
 
 
-app.get('/', (req,res) => {
+app.get('/api', (req,res) => {
   res.send('hola server en express');
-})
-app.get('/nueva-ruta', (req,res) => {
+});
+app.get('/api/nueva-ruta', (req,res) => {
   res.send('nueva ruta');
-})
+});
 
 
 routerApi(app);
